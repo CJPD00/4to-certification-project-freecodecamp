@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: 'Lato', sans-serif
+}
+
+#header-img {
+    width: 100px;
+    height: 100px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #eee;
+    border-bottom: 3px solid gray;
+}
+
+.crafts {
+    margin: 0 auto;
+    margin-left: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin: 0;
+}
+
+#nav-bar ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1.5rem;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 160px;
+}
+
+input[type="email"] {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+#submit {
+    background-color: #f1c40f;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    max-width: 150px;
+    border: none;
+    transition: background-color .5s ease-in-out;
+}
+
+#submit:hover {
+    background-color: orange;
+}
+
+#form {
+    text-align: center;
+}
+
+input {
+    height: 30px;
+}
+
+#features {
+    padding: 2rem;
+}
+
+.features section {
+    margin-bottom: 3rem;
+}
+
+#video {
+    width: 100%;
+    max-width: 500px;
+}
+
+#v_marco {
+    display: flex;
+    justify-content: center;
+}
+
+#pricing {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+
+#pricing section {
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+#pricing section input {
+    width: 100%;
+    max-width: 100px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1c40f;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    transition: background-color .5s ease-in-out;
+}
+
+#pricing section input:hover {
+    background-color: orange;
+}
+
+#pricing section h3 {
+    background-color: rgb(165, 157, 157);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    * {
+        scroll-behavior: smooth;
+    }
+
+}
